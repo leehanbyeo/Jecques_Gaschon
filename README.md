@@ -9,7 +9,7 @@
 
 ## 릴리즈 정보
 1. 안드로이드 버전은 [weather 0.01 alpha](https://github.com/leehanbyeo/Jecques_Gaschon/raw/master/jacques_gaschon.apk)를 눌러서 다운로드 하실 수 있습니다.
-2. 웹 버전은 [여기](http://zmsquf789.dothome.co.kr/jacques_gaschon)를 눌러 브라우저에서 이용할 수 있습니다.
+2. 웹 버전은 [여기](http://zmsquf789.dothome.co.kr/Jecques_Gaschon)를 눌러 브라우저에서 이용할 수 있습니다.
 
 ## 후원
 > 하나은행 : 625-910134-17408 (예금주 : 이한별)
