@@ -1,0 +1,250 @@
+.cal {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.cal th,
+.cal td {
+    border: 1px solid black;
+}
+
+.cal th:first-of-type,
+.cal td:first-of-type {
+    color: red;
+}
+.cal th:last-of-type,
+.cal td:last-of-type {
+    color: blue;
+}
+
+.cal-head {
+    text-align: center;
+    color: black;
+}
+
+
+/*체크박스*/
+.rebox {
+    width: 70%;
+    margin: auto;
+    overflow: auto;
+    border: 1px solid #028c6a;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.rebox p {
+    display: inline-block;
+}
+
+.reboxf {
+    width: 53%;
+}
+
+.reboxl {
+    width: 47%;
+}
+
+.reboxf, .reboxl {
+    float: left;
+    height: 98px;
+}
+
+.reboxf input {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.reboxf img {
+    margin-left: 40px;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.reboxf p {
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.reboxl select, .reboxl p {
+    line-height: 98px;
+}
+
+.reboxl .dabox {
+    margin-left: 100px;
+    
+}
+
+.reboxl .opbox {
+    margin-left: 20px;
+    
+}
+
+.reboxl select:disabled {
+    opacity: 0.5;
+}
+
+.reboxl p {
+    margin-left: 35px;
+}
+.reboxl p::before {
+    content: "\0020A9";
+    margin-right: 1em;
+}
+
+#totaltotal::before {
+    content: "\0020A9";
+    margin-right: 1em;
+}
+
+#retable {
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#retable {
+    min-width: auto;
+    border-top: 1px solid #d1e0e4;
+    margin-bottom: 20px;
+}
+
+#retable th,
+#retable td {
+    border-bottom: 1px solid #d1e0e4;
+    border-right: none;
+}
+
+#retable th {
+    font-weight: normal;
+    text-align: right;
+    background-color: #f0f7fc;
+    word-break: keep-all;
+}
+
+#retable td {
+    padding-right: 40px;
+}
+
+#retable input {
+    height: 32px;
+    border: 1px solid #cecece;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+#retable input[name="username"]{
+    width: 100%;
+}
+
+#retable input[name^="tel"]{
+    width: 26%;
+    float: left;
+}
+
+#retable span {
+    float: left;
+    display: block;
+    width: 11%;
+    text-align: center;
+    line-height: 32px;
+}
+
+#rego {
+    display: block;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    background-color: #028c6a;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+    margin-bottom: 60px;
+    border: none;
+    cursor: pointer;
+}
+
+#total {
+    border: 1px solid #028c6a;
+}
+
+#relist {
+    width: 70%;
+    margin: auto;
+}
+
+.glist {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.glist>li::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #028c6a;
+    position: absolute;
+    margin-left: -0.65em;
+    margin-top: 0.4em;
+    border-radius: 30%;
+}
+
+.glist> li {
+    padding-left: 12px;
+}
+
+#date {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+@media all and (max-width:1000px) {
+    .rebox {
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+    .reboxf, .reboxl {
+        text-align: center;
+        width: 100%;
+    }
+    .reboxf input, .reboxf img, .reboxf p {
+        margin-left: 0px;
+    }
+    .reboxf p {
+        margin-left: 10px;
+    }
+    .reboxl select:first-of-type,
+    .reboxl select:last-of-type,
+    .reboxl p {
+        margin-left: 0px;
+    }
+    .reboxl select:last-of-type {
+        margin-left: 10px    
+    }
+    .reboxl p {
+        margin-left: 25px;
+    }
+    #total{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media all and (max-width:365px) {
+    
+    .reboxl select:last-of-type {
+        margin-left: 5px    
+    }
+    .reboxl p {
+        margin-left: 5px;
+    }
+}

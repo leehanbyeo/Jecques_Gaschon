@@ -1,0 +1,251 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.cen1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    float: left;
+}
+
+h3 {    
+    color: #028c6a;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #333;
+}
+
+header {
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+
+section {
+    padding-top: 100px;
+}
+
+#pcnav {
+    float: right;
+}
+
+.main {
+    float: left;
+    width: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.main>a {
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.main:hover>a,
+.sub a:hover {
+    color: #028c6a;
+}
+
+.sub a:hover {
+    background-color: #003e19;
+}
+
+.sub {
+    width: 200px;
+    height: 105px;
+    border-left: 1px solid #025c6a;
+    border-bottom: 1px solid #025c6a;
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 999;
+}
+
+.main:last-of-type .sub {
+    border-right: 1px solid #025c6a;
+}
+
+.sub a {
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    color: #777;
+    font-size: 0.95em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#ham {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 0px;
+    margin-right: 15px;
+    margin-top: 22px;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+
+footer {
+    border-top: 1px solid #028c6a;
+}
+
+footer>div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: auto;
+}
+
+#flogo, #ftext {
+    float: left;
+}
+
+#fbaro {
+    float: right;
+    margin-right: 100px;
+    margin-top: 38px;
+}
+
+#ftext {
+    margin-top: 12px;
+    margin-left: 25px;
+}
+
+#ftext p {
+    padding-bottom: 5px;
+}
+
+#fbaro a {
+    background-color: #028c6a;
+    color: white;
+    padding: 10px;
+}
+
+#mnav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: #003e19;
+    width: 200px;
+    overflow: auto;
+    right: -200px;
+}
+
+.mmain>a {
+    display: block;
+    color: white;
+    padding: 13px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.mmain {
+    border-bottom: 1px solid #028c6a;
+}
+
+.msub {
+    background-color: #028c6a;
+    display: none;
+}
+
+.msub a {
+    display: block;
+    color: white;
+    padding: 13px;
+    cursor: pointer;
+}
+
+.msub li {
+    border-bottom: 1px solid #003e19;
+}
+
+.msub li:last-of-type {
+    border-bottom: none;
+}
+
+#mback {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+}
+
+#title_box {
+    margin-bottom: 30px;
+}
+
+#imgtitle {
+    position: relative;
+}
+
+#imgtitle>img {
+    display: block;
+    width: 100%;
+}
+
+#title_txt {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    text-shadow: 3px 4px 3px #028c6a;
+}
+
+#title_txt h2 {
+    color: #003e19;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+@media all and (max-width:1200px){
+    #pcnav {
+        display: none;
+    }
+    #ham {
+        display: inline-block;
+    }
+}
+
+@media all and (max-width:600px){
+    #flogo {
+        display: none;
+    }
+    #ftext,#fbaro {
+        float: none;
+        text-align:center;
+        margin: auto;
+    }
+    #fbaro {
+        margin: 30px auto;
+    }
+}

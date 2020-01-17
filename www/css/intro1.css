@@ -1,0 +1,14 @@
+#adbox {
+    overflow: auto;
+    text-align: center;
+}
+
+.address {
+    color: #333;
+    font-weight: bold;
+}
+
+.address:last-of-type {
+    margin-bottom: 20px;
+}
+

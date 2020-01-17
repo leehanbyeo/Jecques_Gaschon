@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="HB Lee" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <link href="css/common.css" rel="stylesheet" />
+        <link href="css/reserve0.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <script
+              src="https://code.jquery.com/jquery-3.4.1.min.js"
+              integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+              crossorigin="anonymous"></script>
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    </head>
+    
+    <body>
+        
+        <header>
+            <div class="cen1">
+                <h1>
+                    <a href="index.html"><img src="images/jg_logo-01.png" alt="자크 가숑 로고" /></a>
+                </h1>
+                <nav id="pcnav">
+                    <ul>
+                        <li class="main">
+                            <a href="intro0.html">펜션소개</a>
+                            <ul class="sub">
+                                <li><a href="intro0.html">인사말</a></li>
+                                <li><a href="intro1.html">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li class="main">
+                            <a href="room0.html">객실안내</a>
+                            <ul class="sub">
+                                <li><a href="room0.html">12평</a></li>
+                                <li><a href="room1.html">16평</a></li>
+                                <li><a href="room2.html">30평</a></li>
+                            </ul>
+                        </li>
+                        <li class="main">
+                            <a href="service0.html">서비스</a>
+                            <ul class="sub">
+                                <li><a href="service0.html">관광명소</a></li>
+                            </ul>
+                        </li>
+                        <li class="main">
+                            <a href="reserve0.html">예약안내</a>
+                            <ul class="sub">
+                                <li><a href="reserve0.html">예약하기</a></li>
+                                <li><a href="reserve1.html">예약조회</a></li>
+                                <li><a href="reserve2.html">이용안내</a></li>
+                            </ul>
+                        </li>
+                        <li class="main">
+                            <a href="community0.html">커뮤니티</a>
+                            <ul class="sub">
+                                <li><a href="community0.html">공지사항</a></li>
+                                <li><a href="community1.html">이용후기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <button id="ham">
+                    <img src="images/ham-01.png" alt="모바일 메뉴 버튼" />        
+                </button>
+                <div id="mback"></div>
+                <nav id="mnav">
+                    <ul>
+                        <li class="mmain">
+                            <a href="intro0.html">펜션소개</a>
+                            <ul class="msub">
+                                <li><a href="intro0.html">인사말</a></li>
+                                <li><a href="intro1.html">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li class="mmain">
+                            <a href="room0.html">객실안내</a>
+                            <ul class="msub">
+                                <li><a href="room0.html">12평</a></li>
+                                <li><a href="room1.html">16평</a></li>
+                                <li><a href="room2.html">30평</a></li>
+                            </ul>
+                        </li>
+                        <li class="mmain">
+                            <a href="service0.html">서비스</a>
+                            <ul class="msub">
+                                <li><a href="service0.html">관광명소</a></li>
+                            </ul>
+                        </li>
+                        <li class="mmain">
+                            <a href="reserve0.html">예약안내</a>
+                            <ul class="msub">
+                                <li><a href="reserve0.html">예약하기</a></li>
+                                <li><a href="reserve1.html">예약조회</a></li>
+                                <li><a href="reserve2.html">이용안내</a></li>
+                            </ul>
+                        </li>
+                        <li class="mmain">
+                            <a href="community0.html">커뮤니티</a>
+                            <ul class="msub">
+                                <li><a href="community0.html">공지사항</a></li>
+                                <li><a href="community1.html">이용후</a></li>
+                            </ul>
+                        </li>
+                    </ul>    
+                </nav>
+            </div>
+        </header>
+        
+        <section>
+            <div id="title_box" class="cen1">
+                <div id="imgtitle">
+                    <img src="images/titlebox0.jpg" alt="펜션 사진" />
+                    <div id="title_txt">
+                        <h2>예약하기</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="cen1">
+                <h3>예약하기</h3>
+                <table class="cal">
+                </table>
+                <p id="date"></p>
+                <div class="rebox">
+                    <div class="reboxf">
+                        <input type="checkbox" name="checkbox" title="체크 박스" />
+                        <img src="images/re_room00.jpg" alt="레나" />
+                        <p>레나&nbsp;&nbsp;<span>2/4인실&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+                    </div>
+                    <div class="reboxl">
+                        <input class="roomtype" type="text" value="0" hidden />
+                        <select class="dabox" disabled>
+                            <option value="0">기간</option>
+                            <option value="1">1박</option>
+                            <option value="2">2박</option>
+                            <option value="3">3박</option>
+                        </select>
+                        <select class="opbox" disabled>
+                            <option value="0">인원</option>
+                            <option value="2">2명</option>
+                            <option value="3">3명</option>
+                            <option value="4">4명</option>
+                        </select>
+                        <p>0</p>
+                    </div>
+                </div>
+                <div class="rebox">
+                    <div class="reboxf">
+                        <input type="checkbox" name="checkbox" title="체크 박스" />
+                        <img src="images/re_room01.jpg" alt="끌로에" />
+                        <p>끌로에&nbsp;&nbsp;<span>2/4인실</span></p>
+                    </div>
+                    <div class="reboxl">
+                        <input class="roomtype" type="text" value="0" hidden />
+                        <select class="dabox" disabled>
+                            <option value="0">기간</option>
+                            <option value="1">1박</option>
+                            <option value="2">2박</option>
+                            <option value="3">3박</option>
+                        </select>
+                        <select class="opbox" disabled>
+                            <option value="0">인원</option>
+                            <option value="2">2명</option>
+                            <option value="3">3명</option>
+                            <option value="4">4명</option>
+                        </select>
+                        <p>0</p>
+                    </div>
+                </div>
+                <div class="rebox">
+                    <div class="reboxf">
+                        <input type="checkbox" name="checkbox" title="체크 박스" />
+                        <img src="images/re_room02.jpg" alt="까미유" />
+                        <p>까미유&nbsp;&nbsp;<span>4/6인실</span></p>
+                    </div>
+                    <div class="reboxl">
+                        <input class="roomtype" type="text" value="1" hidden />
+                        <select class="dabox" disabled>
+                            <option value="0">기간</option>
+                            <option value="1">1박</option>
+                            <option value="2">2박</option>
+                            <option value="3">3박</option>
+                        </select>
+                        <select class="opbox" disabled>
+                            <option value="0">인원</option>
+                            <option value="4">4명</option>
+                            <option value="5">5명</option>
+                            <option value="6">5명</option>
+                        </select>
+                        <p>0</p>
+                    </div>
+                </div>
+                <div class="rebox">
+                    <div class="reboxf">
+                        <input type="checkbox" name="checkbox" title="체크 박스" />
+                        <img src="images/re_room03.jpg" alt="알리스" />
+                        <p>알리스&nbsp;&nbsp;<span>4/6인실</span></p>
+                    </div>
+                    <div class="reboxl">
+                        <input class="roomtype" type="text" value="1" hidden />
+                        <select class="dabox" disabled>
+                            <option value="0">기간</option>
+                            <option value="1">1박</option>
+                            <option value="2">2박</option>
+                            <option value="3">3박</option>
+                        </select>
+                        <select class="opbox" disabled>
+                            <option value="0">인원</option>
+                            <option value="4">4명</option>
+                            <option value="5">5명</option>
+                            <option value="6">6명</option>
+                        </select>
+                        <p>0</p>
+                    </div>
+                </div>
+                <div class="rebox">
+                    <div class="reboxf">
+                        <input type="checkbox" name="checkbox" title="체크 박스" />
+                        <img src="images/re_room04.jpg" alt="앙브흐" />
+                        <p>앙브흐&nbsp;&nbsp;<span>10/15인실</span></p>
+                    </div>
+                    <div class="reboxl">
+                        <input class="roomtype" type="text" value="2" hidden />
+                        <select class="dabox" disabled>
+                            <option value="0">기간</option>
+                            <option value="1">1박</option>
+                            <option value="2">2박</option>
+                            <option value="3">3박</option>
+                        </select>
+                        <select style="width: 51px;" class="opbox" disabled>
+                            <option value="0">인원</option>
+                            <option value="10">10명</option>
+                            <option value="11">11명</option>
+                            <option value="12">12명</option>
+                            <option value="13">13명</option>
+                            <option value="14">14명</option>
+                            <option value="15">15명</option>
+                        </select>
+                        <p>0</p>
+                    </div>
+                </div>
+                <div id="total" class="rebox" style="overflow: auto; font-weight: bold;">
+                    <span style="float: left;">총 금액</span>
+                    <span id="totaltotal" style="float: right; text-align: right;">0</span>
+                </div>
+                <div id="relist">
+                    <ul class="glist">
+                        <li>무통장입금계좌 하나 625-910134-17408 (이한별)</li>
+                        <li>당일 예약과 하루 전 예약은 3시간 내에 결제를 완료해 주셔야 합니다.</li>
+                    </ul>
+                </div>
+                <table id="retable">
+                    <colgroup>
+                        <col width="30%">
+                        <col width="70%">
+                    </colgroup>
+                    <tr>
+                        <th>신청자 성명</th>
+                        <td>
+                            <input type="text" name="username" placeholder="성명 입력" title="신청자 성명을 입력하세요."/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>신청자 연락처</th>
+                        <td>
+                            <input type="text" name="tel1" title="연락처 국번자리" />
+                            <span>-</span>
+                            <input type="text" name="tel2" title="연락처 중간자리" />
+                            <span>-</span>
+                            <input type="text" name="tel3" title="연락처 마지막자리" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>입금자명</th>
+                        <td>
+                            <input type="text" name="username" placeholder="입금자명 입력" title="입금자 성명을 입력하세요."/>
+                        </td>
+                    </tr>
+                </table>
+                <button type="button" id="rego">예약하기</button>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="cen1">
+                <img id="flogo" src="images/jg_logo-01.png" alt="JG 로고" />    
+                <div id="ftext">
+                    <p>업체명 : 자크가숑 펜션&nbsp;&nbsp;&nbsp;대표자 : 이한별</p>
+                    <p>전화번호 : 010-0000-0000</p>
+                    <p>입금계좌 : 625-910134-17408 하나은행(이한별)</p>
+                </div>
+                <div id="fbaro">
+                    <a href="#">객실보기</a>
+                    <a href="#">예약하기</a>
+                    <a href="#">오시는길</a>
+                </div>
+            </div>
+        </footer>
+        <script src="script/script.js"></script>
+        <script src="script/reserve0.js"></script>
+    </body>
+</html>

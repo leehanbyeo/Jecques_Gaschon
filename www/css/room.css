@@ -1,0 +1,106 @@
+#tabbtnbox {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.tabbtn {
+    width: 100px;
+    height: 40px;
+    outline: none;
+    background-color: white;
+    border: 1px solid #028c6a;
+    color: #028c6a;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tabcont {
+    display: none;
+    margin-bottom: 60px;
+}
+
+.tabcont:first-of-type {
+    display: block;
+}
+
+.tactive {
+    background-color: #028c6a;
+    color: white;
+}
+
+#slider {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.slick-arrow {
+    border: none;
+    background-color: transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.slick-prev {
+    background-image: url(../images/slide_prev.png);
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    left: -55px;
+}
+    
+.slick-next {
+    background-image: url(../images/slide_next.png);
+    right: -55px;
+    width: 50px;
+    height: 50px;
+}
+
+#mlist {
+    width: 100%;
+    height: 80px;
+}
+
+#mlist>li {
+    background-color: #eee;
+}
+
+.money {
+    float: left;
+    text-align: center;
+    border-top: 2px solid #028c6a;
+    border-bottom: 2px solid #028c6a;
+    border-right: 1px solid #028c6a;
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+#mlist>li:last-of-type {
+    border-right: none;
+}
+
+.money li {
+    border-top: 1px solid #028c6a;
+    font-weight: normal;
+    background-color: white;
+}
+
+@media all and (max-width:1350px){
+    .slick-prev {
+        left: 0px;
+    }
+    .slick-next {
+        right: 0px;
+    }
+}
+
+

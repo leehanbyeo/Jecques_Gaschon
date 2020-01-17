@@ -1,0 +1,89 @@
+#box, #rbox {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+#box {
+    margin-bottom: 60px;
+}
+
+#rvbox {
+    background-color: #eee;
+    text-align: center;
+    padding: 20px;
+}
+
+#rvbox>div {
+    width: 250px;
+    text-align: left;
+    margin: auto;
+    padding-left: 2em;
+}
+
+#telbox input {
+    width: 24%;
+}
+
+#telbox span {
+    width: 14%;
+}
+
+#rvbox p  {
+    margin-bottom: 5px;
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+#rvbox>div>input {
+    margin-bottom: 5px;
+}
+
+#rvbox input {
+    padding: 5px 5px;
+}
+
+#btn {
+    margin-top: 10px;
+    background-color: #028c6a;
+    border: none;
+    color: white;
+    width: 100%;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 10px 0px;
+    cursor: pointer;
+    outline: none;
+}
+
+#rbox {
+    overflow: auto;
+    margin-bottom: 60px;
+    display: none;
+}
+
+#rimg {
+    width: 70%;
+    float: left;
+}
+
+#rtxt {
+    width: 30%;
+    float: right;
+    padding-left: 15px;
+    padding-top: 50px;
+}
+
+@media all and (max-width:500px){
+    #rtxt,#rimg {
+        float: left;
+        width: 100%;
+    }
+    #rimg img {
+        width: 100%;
+    }
+    #rtxt {
+        text-align: center;
+        padding-top: 20px;
+    }
+}

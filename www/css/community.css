@@ -1,0 +1,178 @@
+.listboard {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.searchbox {
+    border: 1px solid #e2e2e2;
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+#stype, #keyword, #sbtn {
+    height: 35px;
+    vertical-align: middle;
+}
+
+#stype {
+    max-width: 200px;
+    width: 20%;
+    font-size: 0.95em;
+    padding-left: 3px;
+    letter-spacing: -0.05em;
+}
+
+#keyword {
+    max-width: 390px;
+    width: 55%;
+    font-size: 0.95em;
+    padding-left: 3px;
+    letter-spacing: -0.05em;
+}
+
+#sbtn {
+    background-color: #028c6a;
+    color: white;
+    border: none;
+    padding: 0px 20px;
+}
+
+#listtable {
+    margin-bottom: 20px;
+}
+
+#listtable>li {
+    width: 100%;
+    overflow: auto;
+    padding: 10px;
+    border-bottom: 1px solid #028c6a;
+}
+
+#listtable>li:first-of-type {
+    border-top: 2px solid #028c6a;
+    background-color: #eee;
+    font-weight: bold;
+
+}
+
+#listtable span {
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+#listtable span>a {
+    color: #000;
+}
+
+#listtable span:nth-of-type(1) {width: 5%;}
+#listtable span:nth-of-type(2) {
+    width: 75%;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#listtable span:nth-of-type(3) {width: 10%;}
+#listtable span:nth-of-type(4) {width: 10%;}
+
+#listtable>li:first-of-type span:nth-of-type(2){
+    text-align: center;
+}
+
+.pagi {
+    padding: 30px 0px;
+    text-align: center;
+}
+
+.pagi a {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.pagi a:not(.pagi-num){
+    width: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pagi-num {
+    border: 1px solid #dbdbdb;
+    padding: 0px 0.5em;
+    color: #262626;
+}
+
+.pagi-num:hover {
+    color: #0c4da2;
+}
+
+.pactive {
+    background-color: #028c6a;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 0px 0.6em;
+}
+
+.pactive:hover {
+    color: white;
+}
+
+.pagi-first {
+    background-image: url(../images/board_pagi_first.gif);
+}
+.pagi-prev {
+    background-image: url(../images/board_pagi_prev.gif);
+}
+.pagi-next {
+    background-image: url(../images/board_pagi_next.gif);
+}
+.pagi-last {
+    background-image: url(../images/board_pagi_last.gif);
+}
+
+#writing {
+    background-color: #028c6a;
+    color: white;
+    padding: 5px;
+    float: right;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+@media all and (max-width:765px){
+    #listtable li:first-of-type {display: none;}
+    #listtable li span:first-of-type {
+        display: none;
+    }
+    #listtable span:nth-of-type(2) {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    #listtable span:nth-of-type(3){
+        background-color: #eee;
+        width: 20%;
+        margin-right: 10px;
+        border-radius: 10%;
+    }
+    #listtable span:nth-of-type(4){
+        background-color: #eee;
+        width: 20%;
+        border-radius: 10%;
+    }
+    #listtable li:nth-of-type(2){
+        border-top: 2px solid #028c6a;
+    }
+}
+
+@media all and (max-width: 400px){
+    .pagi-num {
+        padding: 0px 0.3em;
+        letter-spacing: -0.1em;
+        font-size: 0.9em;
+    }
+}
+

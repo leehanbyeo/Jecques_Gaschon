@@ -1,0 +1,28 @@
+.glist>li::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #028c6a;
+    position: absolute;
+    margin-left: -0.65em;
+    margin-top: 0.4em;
+    border-radius: 30%;
+}
+
+.glist> li {
+    padding-left: 12px;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+.glist {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.glist:last-of-type {
+    margin-bottom: 60px;
+}

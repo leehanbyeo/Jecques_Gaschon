@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="HB Lee" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <link href="css/common.css" rel="stylesheet" />
+        <link href="css/community.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <script
+              src="https://code.jquery.com/jquery-3.4.1.min.js"
+              integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+              crossorigin="anonymous"></script>
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    </head>
+    
+    <body>
+        
+        <header>
+            <div class="cen1">
+                <h1>
+                    <a href="index.html"><img src="images/jg_logo-01.png" alt="자크 가숑 로고" /></a>
+                </h1>
+                <nav id="pcnav">
+                    <ul>
+                        <li class="main">
+                            <a href="intro0.html">펜션소개</a>
+                            <ul class="sub">
+                                <li><a href="intro0.html">인사말</a></li>
+                                <li><a href="intro1.html">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li class="main">
+                            <a href="room0.html">객실안내</a>
+                            <ul class="sub">
+                                <li><a href="room0.html">12평</a></li>
+                                <li><a href="room1.html">16평</a></li>
+                                <li><a href="room2.html">30평</a></li>
+                            </ul>
+                        </li>
+                        <li class="main">
+                            <a href="service0.html">서비스</a>
+                            <ul class="sub">
+                                <li><a href="service0.html">관광명소</a></li>
+                            </ul>
+                        </li>
+                        <li class="main">
+                            <a href="reserve0.html">예약안내</a>
+                            <ul class="sub">
+                                <li><a href="reserve0.html">예약하기</a></li>
+                                <li><a href="reserve1.html">예약조회</a></li>
+                                <li><a href="reserve2.html">이용안내</a></li>
+                            </ul>
+                        </li>
+                        <li class="main">
+                            <a href="community0.html">커뮤니티</a>
+                            <ul class="sub">
+                                <li><a href="community0.html">공지사항</a></li>
+                                <li><a href="community1.html">이용후</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <button id="ham">
+                    <img src="images/ham-01.png" alt="모바일 메뉴 버튼" />        
+                </button>
+                <div id="mback"></div>
+                <nav id="mnav">
+                    <ul>
+                        <li class="mmain">
+                            <a href="intro0.html">펜션소개</a>
+                            <ul class="msub">
+                                <li><a href="intro0.html">인사말</a></li>
+                                <li><a href="intro1.html">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li class="mmain">
+                            <a href="room0.html">객실안내</a>
+                            <ul class="msub">
+                                <li><a href="room0.html">12평</a></li>
+                                <li><a href="room1.html">16평</a></li>
+                                <li><a href="room2.html">30평</a></li>
+                            </ul>
+                        </li>
+                        <li class="mmain">
+                            <a href="service0.html">서비스</a>
+                            <ul class="msub">
+                                <li><a href="service0.html">관광명소</a></li>
+                            </ul>
+                        </li>
+                        <li class="mmain">
+                            <a href="reserve0.html">예약안내</a>
+                            <ul class="msub">
+                                <li><a href="reserve0.html">예약하기</a></li>
+                                <li><a href="reserve1.html">예약조회</a></li>
+                                <li><a href="reserve2.html">이용안내</a></li>
+                            </ul>
+                        </li>
+                        <li class="mmain">
+                            <a href="community0.html">커뮤니티</a>
+                            <ul class="msub">
+                                <li><a href="community0.html">공지사항</a></li>
+                                <li><a href="community1.html">이용후기</a></li>
+                            </ul>
+                        </li>
+                    </ul>    
+                </nav>
+            </div>
+        </header>
+        
+        <section>
+            <div id="title_box" class="cen1">
+                <div id="imgtitle">
+                    <img src="images/titlebox0.jpg" alt="펜션 사진" />
+                    <div id="title_txt">
+                        <h2>이용후기</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="cen1">
+                <h3>이용후기</h3>
+                <div class="listboard">
+                    <div class="searchbox">
+                        <form id="search" action="search.php" method="get">
+                            <select id="stype" name="stype">
+                                <option value="title">제목</option>
+                                <option value="cont">내용</option>
+                                <option value="title.cont">제목+내용</option>
+                            </select>
+                            <input id="keyword" name="keyword" type="text" placeholder="검색어입력" />
+                            <button id="sbtn" type="button">검색</button>
+                        </form>
+                        <script>
+                            $("#sbtn").click(function(){
+                                var len = $("#keyword").val().length;
+                                if(len == 0){
+                                    alert("검색어를 입력하세요.");
+                                }else if(len == 1){
+                                         alert("검색어는 최소 두글자 이상이어야 합니다.");
+                                }else {
+                                    $("#search").submit();
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+                <a id="writing">글쓰기</a>
+                <ul id="listtable">
+                    <li>
+                        <span>NO</span>
+                        <span>제목</span>
+                        <span>작성자</span>
+                        <span>날짜</span>
+                    </li>
+                    <li>
+                        <span>5</span>
+                        <span>
+                            <a href="#">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</a>
+                        </span>
+                        <span>김흥국</span>
+                        <span>2019/11/27</span>
+                    </li>
+                    <li>
+                        <span>4</span>
+                        <span>
+                            <a href="#">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</a>
+                        </span>
+                        <span>고니</span>
+                        <span>2019/11/26</span>
+                    </li>
+                    <li>
+                        <span>3</span>
+                        <span>
+                            <a href="#">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</a>
+                        </span>
+                        <span>아귀</span>
+                        <span>2019/11/26</span>
+                    </li>
+                    <li>
+                        <span>2</span>
+                        <span>
+                            <a href="#">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</a>
+                        </span>
+                        <span>짝귀</span>
+                        <span>2019/11/25</span>
+                    </li>
+                    <li>
+                        <span>1</span>
+                        <span>
+                            <a href="#">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</a>
+                        </span>
+                        <span>이한별</span>
+                        <span>2019/11/24</span>
+                    </li>
+                </ul>
+                <div class="pagi">
+                    <a href="#" class="pagi-first"></a>
+                    <a href="#" class="pagi-prev"></a>
+                    <a href="#" class="pagi-num pactive">1</a>
+                    <a href="#" class="pagi-next"></a>
+                    <a href="#" class="pagi-last"></a>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="cen1">
+                <img id="flogo" src="images/jg_logo-01.png" alt="JG 로고" />    
+                <div id="ftext">
+                    <p>업체명 : 자크가숑 펜션&nbsp;&nbsp;&nbsp;대표자 : 이한별</p>
+                    <p>전화번호 : 010-0000-0000</p>
+                    <p>입금계좌 : 625-910134-17408 하나은행(이한별)</p>
+                </div>
+                <div id="fbaro">
+                    <a href="#">객실보기</a>
+                    <a href="#">예약하기</a>
+                    <a href="#">오시는길</a>
+                </div>
+            </div>
+        </footer>
+        <script src="script/script.js"></script>
+    </body>
+</html>
